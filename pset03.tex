@@ -1,0 +1,83 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+
+
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS/MATH 113, SPRING 2026}{Pset 03: Predicate Logic and Quantifiers II}{\theauthor}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+% \printanswers %Uncomment this line
+
+\title{Problem Set  03: Predicate Logic and Quantifiers II}
+\author{Blingblong} % <=== replace with your student ID, e.g. xy012345
+\date{CS/MATH 113 Discrete Mathematics\\Habib University\\Spring 2026}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+    \titledquestion{When in Rome}
+    Express each of these compound propositions given below as an English sentence. For each sentence, first define your predicates accordingly that you will use for all the parts below  and then convert the sentence into a compound proposition. Try to use the least number of predicate, keep your predicates general.
+
+    \begin{parts}
+        \part All roads lead to rome.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part If there is a road that leads to rome then there is some road that leads to A345 Block 15.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part For every road that leads to somewhere there is a road that lead to nowhere.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+
+    \titledquestion{Quirky formulas}
+    A statement is said to be \emph{quirky} if and only if it is of the form: 
+    $$Q_1x_1Q_2x_2 \dots Q_n x_n \; P(x_1, x_2, \dots, x_n)$$
+    Where $Q_i$  $i= 1, 2, \dots, n$, is either the existential quantifier or the universal quantifier, and $P(x_1, x_2, \dots, x_n)$ is a predicate involving no quantifiers. For example, $\exists x \forall y \exists z (P(x, y) \land Q(y,z))$ is quirky normal form, whereas $\exists x P(x) \lor \forall x Q(x)$ is not.
+
+    Convert each of the boolean formulas below in an equivalent quirky formula.
+    \begin{parts}
+        \part $\exists xP(x) \lor \exists xQ(x) \lor R$, where $R$ is a proposition not involving any quantifiers.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\neg (\forall xP(x) \lor \forall x Q(x))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\exists x P(x) \implies \exists x Q(x)$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+
+
+    
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
